@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JINX // Loose Cannon of Zaun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Permanent+Marker&family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div id="cursorGlow" class="cursor-glow"></div>
+
+<header class="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">JINX<span class="logo-dot">.</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#lore">Lore</a>
+      <a href="#arsenal">Arsenal</a>
+      <a href="#tiers">Chaos Tiers</a>
+      <a href="#footer">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-photo"></div>
+    <div class="blob blob-pink"></div>
+    <div class="blob blob-blue"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <canvas id="emberCanvas" class="ember-canvas"></canvas>
+  <div class="hero-scanline"></div>
+  <div class="hero-burst"></div>
+
+
+  <div class="bomb bomb-1"></div>
+  <div class="bomb bomb-2"></div>
+  <div class="bomb bomb-3"></div>
+  <div class="bomb bomb-4"></div>
+  <div class="bomb bomb-5"></div>
+
+  <!-- drop an official Jinx render here as img/jinx-hero.png -->
+  <div class="hero-character-wrap" id="heroCharWrap">
+    <img src="img/jinx-hero.png" alt="Jinx - Arcane" class="hero-character"
+         onerror="this.parentElement.remove()">
+  </div>
+
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">ZAUN'S FAVORITE CHAOS AGENT</p>
+    <h1 class="hero-title glitch" data-text="JINX">JINX</h1>
+    <p class="hero-tagline">"Let's play BOOM boom!"</p>
+    <p class="hero-desc">Loose cannon. Chemtech tinkerer. Powder turned menace.
+      Welcome to the wildest corner of the Undercity — nothing here stays
+      standing for long.</p>
+
+    <div class="hero-buttons">
+      <a href="#arsenal" class="btn btn-primary">SEE THE ARSENAL</a>
+      <a href="#lore" class="btn btn-outline">HER STORY</a>
+    </div>
+  </div>
+
+
+  <div class="chaos-marquee">
+    <div class="marquee-track">
+      <span>CHAOS ✦ CHEMTECH ✦ CATASTROPHE ✦ BOOM ✦ CHAOS ✦ CHEMTECH ✦ CATASTROPHE ✦ BOOM ✦ </span>
+      <span>CHAOS ✦ CHEMTECH ✦ CATASTROPHE ✦ BOOM ✦ CHAOS ✦ CHEMTECH ✦ CATASTROPHE ✦ BOOM ✦ </span>
+    </div>
+  </div>
+
+  <div class="scroll-indicator"><span></span></div>
+</section>
+
+
+
+<section class="lore" id="lore">
+  <div class="bomb bomb-6"></div>
+
+  <div class="lore-container">
+    <div class="lore-frame">
+      <img src="img/jinx-lore.png" alt="Jinx portrait" class="lore-portrait"
+           onerror="this.remove()">
+      <div class="frame-glow"></div>
+      <p class="frame-tag">powder who?</p>
+    </div>
+
+    <div class="lore-text">
+      <span class="section-label">the girl behind the boom</span>
+      <h2 class="section-title">From Powder<br>to Problem</h2>
+
+      <p>She was a kid with clever hands and a name nobody feared. Zaun took
+        the kid, kept the hands, and gave back something louder. Now every
+        rooftop in the Undercity knows the sound of her laugh arriving about
+        two seconds before the ceiling does.</p>
+
+      <p>She builds what shouldn't work, fires what shouldn't aim, and walks
+        away from what shouldn't have survived. Piltover calls it terrorism.
+        She calls it Tuesday.</p>
+
+      <div class="stats">
+        <div>
+          <div class="stat-head">
+            <span>CHAOS</span>
+            <span>98%</span>
+          </div>
+          <div class="stat-bar">
+            <div class="stat-fill" style="--value: 98%"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="stat-head">
+            <span>FIREPOWER</span>
+            <span>94%</span>
+          </div>
+          <div class="stat-bar">
+            <div class="stat-fill" style="--value: 94%"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="stat-head">
+            <span>CHEMTECH TINKERING</span>
+            <span>88%</span>
+          </div>
+          <div class="stat-bar">
+            <div class="stat-fill" style="--value: 88%"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="stat-head">
+            <span>IMPULSE CONTROL</span>
+            <span>6%</span>
+          </div>
+          <div class="stat-bar">
+            <div class="stat-fill" style="--value: 6%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="arsenal" id="arsenal">
+  <div class="spark-dot spark-a"></div>
+  <div class="spark-dot spark-b"></div>
+  <div class="spark-dot spark-c"></div>
+
+  <div class="section-header">
+    <span class="section-label">handle with zero care</span>
+    <h2 class="section-title">The Arsenal</h2>
+    <p class="section-sub">Every one of these was built in a basement, tested
+      on something expensive, and named in under four seconds.</p>
+  </div>
+
+  <div class="arsenal-grid">
+    <article class="weapon-card featured">
+      <div class="weapon-icon">🔫</div>
+      <h3>Pow-Pow</h3>
+      <p>The minigun with a mood. Spins up fast, calms down never, and has
+        opinions about who deserves cover.</p>
+    </article>
+
+    <article class="weapon-card">
+      <div class="weapon-icon">🚀</div>
+      <h3>Fishbones</h3>
+      <p>Rocket launcher shaped like a shark, loaded like a bad idea. Talks
+        back. She listens more than she should.</p>
+    </article>
+
+    <article class="weapon-card">
+      <div class="weapon-icon">💣</div>
+      <h3>Chompers</h3>
+      <p>Bear-trap grenades with teeth and terrible manners. Step once,
+        regret twice, leave slowly.</p>
+    </article>
+
+    <article class="weapon-card">
+      <div class="weapon-icon">⚡</div>
+      <h3>Zap!</h3>
+      <p>Shock pistol tuned past every safety limit printed on the casing.
+        Stops hearts, starts arguments.</p>
+    </article>
+
+    <article class="weapon-card">
+      <div class="weapon-icon">🦈</div>
+      <h3>Super Mega Death Rocket</h3>
+      <p>Crosses the entire city, ignores the concept of walls, and only
+        gets fired when she's already bored of subtlety.</p>
+    </article>
+
+    <article class="weapon-card">
+      <div class="weapon-icon">🎨</div>
+      <h3>Spray Cans</h3>
+      <p>Technically not a weapon. Practically the reason half of Piltover
+        repaints their walls twice a month.</p>
+    </article>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
